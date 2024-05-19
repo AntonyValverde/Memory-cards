@@ -1,0 +1,44 @@
+/* src/Components/Card.css */
+.card {
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+    position: relative;
+  }
+  
+  .card div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .card .card-front {
+    transform: rotateY(0deg);
+    background-color: #eee;
+  }
+  
+  .card .card-back {
+    transform: rotateY(180deg);
+    background-color: white;
+  }
+  
+  .card.flipped .card-front {
+    transform: rotateY(-180deg);
+  }
+  
+  .card.flipped .card-back {
+    transform: rotateY(0deg);
+  }
+  
+  .card-back img {
+    width: 80%;
+    height: 80%;
+  }
+  
