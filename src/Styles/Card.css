@@ -1,44 +1,46 @@
 /* src/Components/Card.css */
 .card {
-    width: 100px;
-    height: 100px;
-    perspective: 1000px;
-    position: relative;
-  }
-  
-  .card div {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    transition: transform 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .card .card-front {
-    transform: rotateY(0deg);
-    background-color: #eee;
-  }
-  
-  .card .card-back {
-    transform: rotateY(180deg);
-    background-color: white;
-  }
-  
-  .card.flipped .card-front {
-    transform: rotateY(-180deg);
-  }
-  
-  .card.flipped .card-back {
-    transform: rotateY(0deg);
-  }
-  
-  .card-back img {
-    width: 80%;
-    height: 80%;
-  }
-  
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+  position: relative;
+}
+
+.card div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+.card .card-front {
+  transform: rotateY(0deg);
+  background-color: #ffcc00;
+  color: #fff;
+  font-size: 2em;
+}
+
+.card .card-back {
+  transform: rotateY(180deg);
+  background-color: #00c8ff;
+}
+
+.card.flipped .card-front {
+  transform: rotateY(-180deg);
+}
+
+.card.flipped .card-back {
+  transform: rotateY(0deg);
+}
+
+.card-back img {
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+}
