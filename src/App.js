@@ -3,9 +3,9 @@ import Board from './Components/Board';
 import './App.css';
 
 const levels = {
-  easy: { pairs: 4, time: 60 },
-  medium: { pairs: 8, time: 120 },
-  hard: { pairs: 10, time: 180 }
+  easy: { pairs: 4, time: 35 },
+  medium: { pairs: 8, time: 65 },
+  hard: { pairs: 10, time: 95 }
 };
 
 const generateInitialCards = (pairsCount) => {
